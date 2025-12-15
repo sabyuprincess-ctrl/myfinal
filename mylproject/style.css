@@ -1,0 +1,147 @@
+
+* { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+}
+
+body { 
+    font-family: 'Inter', system-ui, Arial, sans-serif; 
+    background: #000; 
+    color: #fff; 
+    line-height: 1.6; 
+}
+
+header {
+    padding: 22px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 100;
+}
+
+.logo { 
+    font-weight: 700; 
+    font-size: 28px; 
+    color: #fff; 
+    text-decoration: none;
+}
+
+nav ul { 
+    list-style: none; 
+    display: flex; 
+    gap: 32px; 
+    align-items: center; 
+}
+
+nav a {
+    color: rgba(255,255,255,0.85);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 0;
+}
+
+nav a:hover {
+    color: #4A8FE7;
+}
+
+.hero {
+    background: linear-gradient(135deg, #1a2a3a 0%, #0f1a24 100%);
+    color: #fff;
+    position: relative;
+}
+.container {
+    width: min(1200px, 92%);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 80px 0;
+    position: relative;
+    z-index: 2;
+    min-height: 90vh;
+}
+.hero-left { 
+    flex: 1; 
+    max-width: 580px; 
+}
+
+.hero-left h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    font-weight: 700;
+}
+
+.hero-left p { 
+    color: rgba(255,255,255,0.8); 
+    margin-bottom: 32px; 
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.btn-row { 
+    display: flex; 
+    gap: 16px; 
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 16px 32px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+   
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn.primary {
+    background: #4A8FE7;
+    color: #0b0b0b;
+    box-shadow: 0 4px 20px rgba(74, 143, 231, 0.3);
+}
+
+.btn.primary:hover {
+    background: #6ba7f0;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(74, 143, 231, 0.4);
+}
+
+.btn.ghost {
+    background: transparent;
+    color: #fff;
+    border: 2px solid rgba(255,255,255,0.3);
+}
+
+.btn.ghost:hover {
+    background: rgba(255,255,255,0.1);
+    border-color: rgba(255,255,255,0.5);
+}
+.hero-right { 
+    flex: 1; 
+    position: relative; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.pc-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pc-image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+}
